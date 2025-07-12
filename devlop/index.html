@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar lg:px-20 bg-blue-300 flex justify-between items-center shadow-sm">
+  <!-- Left Button -->
+  <div>
+    <button class="btn px-4 py-5 font-bold text-2xl text-black bg-red-400 toggle-btn">Blog</button>
+  </div>
+  <!-- Logo + Text -->
+  <div class="flex items-center gap-5 py-4">
+    <div class="-mt-2">
+      <img src="images/logo.png" alt="Logo" class="h-10 w-10 object-contain">
+    </div>
+    <div>
+      <a class="font-bold lg:text-4xl sm:text-2xl">Donate Bangladesh</a>
+    </div>
+  </div>
+  <!-- Right Button with Icon -->
+  <button class="btn px-4 py-5 font-bold text-2xl text-black flex items-center gap-2 toggle-btn">
+    <img src="images/coin.png" alt="coin" class="h-8 w-8"> 5550
+  </button>
+</div>
+<div class="flex gap-8 justify-center pt-15">
+    <div>
+    <button class="btn px-10 py-8 font-bold text-2xl text-black bg-red-400 toggle-btn">Donation</button>
+  </div>
+  <div>
+    <button class="btn px-10 py-8 font-bold text-2xl text-black bg-red-400 toggle-btn">History</button>
+  </div>
+</div>
+
+<!--Stat card -->
+<div class=" lg:flex ml-5  rounded-xl  mt-15 gap-10 bg-base-300 mr-20 shadow-sm">
+  <div class="rounded-xl ">
+    <img  class=" h-full" 
+      src="images/noakhali.png"
+      alt="Shoes" />
+  </div>
+   <div class="pt-5 w-1/2">
+     <button class="btn px-4 py-5 font-bold text-2xl text-black flex items-center gap-2 toggle-btn">
+    <img src="images/coin.png" alt="coin" class="h-8 w-8"> 5550
+  </button>
+   <h2 class="font-bold text-xl mt-5">Donate for Flood at Noakhali, Bangladesh</h2>
+   <p class="mt-2 pr-5 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in
+     supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+     <input class="w-full mt-10 pl-5 py-3 text-xl" type="number" placeholder="Write Donation Amount">
+    <div class="mt-5">
+         <button class="btn bg-blue-400 font-bold text-white text-xl hover:bg-blue-500">Donate now</button>
+    </div>
+   </div>
+ 
+</div>
+
+
+
+<div class="card mt-15 bg-base-100 w-96 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes"
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title">Card Title</h2>
+    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="card-actions">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- ✅ JavaScript -->
+<script>
+  const buttons = document.querySelectorAll('.toggle-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove bg-red-400 from all buttons
+      buttons.forEach(btn => btn.classList.remove('bg-red-400'));
+
+      // Add bg-red-400 to the clicked button
+      button.classList.add('bg-red-400');
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
