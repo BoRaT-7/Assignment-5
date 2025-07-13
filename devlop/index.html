@@ -13,7 +13,7 @@
          <div class="navbar lg:px-20 bg-blue-300 flex justify-between items-center shadow-sm">
   <!-- Left Button -->
   <div>
-    <button class="btn px-4 py-5 font-bold lg:text-2xl text-black bg-red-400 toggle-btn">Blog</button>
+    <button id="blog_button" class="btn px-4 py-5 font-bold lg:text-2xl text-black bg-red-400 toggle-btn">Blog</button>
   </div>
   <!-- Logo + Text -->
   <div class="flex items-center lg:gap-5 gap-2 py-4">
@@ -25,7 +25,7 @@
     </div>
   </div>
   <!-- Right Button with Icon -->
-  <button class="btn px-4 py-5 font-bold lg:text-2xl text-black flex items-center gap-2 toggle-btn">
+  <button id="main_balance" class="btn px-4 py-5 font-bold lg:text-2xl text-black flex items-center gap-2 toggle-btn">
     <img src="images/coin.png" alt="coin" class="h-8 w-8"> 5550
   </button>
 </div>
@@ -163,33 +163,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ✅ JavaScript -->
-<script>
-  const buttons = document.querySelectorAll('.toggle-btn');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', (even) => {
-      // Remove bg-red-400 from all buttons
-      buttons.forEach(btn => btn.classList.remove('bg-red-400'));
-
-      // Add bg-red-400 to the clicked button
-      button.classList.add('bg-red-400');
-    });
-  });
-</script>
-
+<script src="js/main.js"></script>
 
 
 </body>
