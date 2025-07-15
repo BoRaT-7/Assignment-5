@@ -25,7 +25,7 @@
     </div>
   </div>
   <!-- Right Button with Icon -->
-  <button id="main_balance" class="btn px-4 py-5 font-bold lg:text-2xl text-black flex items-center gap-2 toggle-btn">
+  <button id="card_balance" class="btn px-4 py-5 font-bold lg:text-2xl text-black flex items-center gap-2 toggle-btn">
     <img src="images/coin.png" alt="coin" class="h-8 w-8"> 5550
   </button>
 </div>
@@ -53,7 +53,7 @@
   <!-- Right Content Section -->
   <div class="w-full  lg:w-1/2 ">
     <!-- Donation Info Button -->
-    <button class="btn  font-sebold text-lg md:text-2xl text-black flex items-center gap-2 bg-gray-300  justify-center">
+    <button id="donatin_amount" class="btn  font-sebold text-lg md:text-2xl text-black flex items-center gap-2 bg-gray-300  justify-center">
       <img src="images/coin.png" alt="coin" class="h-6 w-6 rounded-xl  md:h-8 md:w-8"> 00 BDT
     </button>
     <!-- Title -->
@@ -66,7 +66,7 @@
       relief efforts and making a positive impact on the lives of those in need.
     </p>
     <!-- Input Field -->
-    <input class="w-full  lg:mt-15 mt-5  sm:mt-10  pl-4 py-3 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300" type="number" placeholder="Write Donation Amount">
+    <input id="input_donation" class="w-full  lg:mt-15 mt-5  sm:mt-10  pl-4 py-3 text-lg border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300" type="number" placeholder="Write Donation Amount">
     <!-- Donate Button -->
     <div  class="lg:mt-10 mt-5">
       <button onclick="document.getElementById('success_modal').showModal()" class="btn bg-green-500 text-white w-full text-xl font-bold">
