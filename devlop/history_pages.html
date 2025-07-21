@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History Pages</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donation History</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-      <div class="headersection fixed top-0 left-0 right-0 z-50">
-         <div class="navbar lg:px-20 bg-blue-300 flex justify-between items-center shadow-sm">
-  <!-- Left Button -->
-  <div>
-    <button id="blog_button" class="btn px-4 py-5 font-bold lg:text-2xl text-black bg-red-400 toggle-btn">Blog</button>
+<body class="bg-gray-50">
+  <!-- Header Section -->
+  <div class="headersection fixed top-0 left-0 right-0 z-50">
+    <div class="navbar lg:px-20 bg-blue-300 flex justify-between items-center shadow-sm">
+      <!-- Left Button -->
+      <div>
+        <button id="blog_button" class="btn px-4 py-5 font-bold lg:text-2xl text-black bg-green-400 toggle-btn">Blog</button>
+      </div>
+      <!-- Logo + Text -->
+      <div class="flex items-center lg:gap-5 gap-2 py-4">
+        <div class="-mt-2">
+          <img src="images/logo.png" alt="Logo" class="h-10 w-10 object-contain">
+        </div>
+        <div>
+          <a class="font-bold lg:text-4xl">Donate Bangladesh</a>
+        </div>
+      </div>
+      <!-- Right Balance -->
+      <button id="main_balance" class="btn px-4 py-5 font-bold lg:text-2xl text-black flex items-center gap-2 toggle-btn">
+        <img src="images/coin.png" alt="coin" class="h-8 w-8"> 98600 BDT
+      </button>
+    </div>
   </div>
-  <!-- Logo + Text -->
-  <div class="flex items-center lg:gap-5 gap-2 py-4">
-    <div class="-mt-2">
-      <img src="images/logo.png" alt="Logo" class="h-10 w-10 object-contain">
-    </div>
-    <div>
-      <a class="font-bold lg:text-4xl ">Donate Bangladesh</a>
-    </div>
-  </div>
-  <!-- Right Button with Icon -->
-  <button id="main_balance" class="btn px-4 py-5 font-bold lg:text-2xl text-black flex items-center gap-2 toggle-btn">
-    <img src="images/coin.png" alt="coin" class="h-8 w-8"> 5550
-  </button>
-</div>
-    </div>
+
+  <!-- Top Nav Buttons -->
   <div class="buttonsection fixed top-[88px] left-0 right-0 z-40 bg-white shadow-md">
-    <div class="flex pb-5  gap-8 justify-center ">
-    <div class="mt-5">
-    <button id="donation_button" class="btn px-8 py-6 font-bold text-2xl text-black  toggle-btn">Donation</button>
-  </div>
-  <div class="mt-5">
-    <button id="historay_button" class="btn px-8 py-6 font-bold text-2xl text-black  toggle-btn">History</button>
-  </div>
-</div>
+    <div class="flex pb-5 gap-8 justify-center">
+      <div class="mt-5">
+        <button id="donation_button" class="btn px-8 py-6 font-bold text-2xl text-black toggle-btn">Donation</button>
+      </div>
+      <div class="mt-5">
+        <button id="historay_button" class="btn px-8 py-6 font-bold text-2xl text-black bg-green-400 toggle-btn">History</button>
+      </div>
+    </div>
   </div>
 
+  <!-- ✅ History Cards Container (Dynamic) -->
+  <div id="history_list" class="pt-[200px] max-w-4xl mx-auto px-4 space-y-6">
+    <!-- JavaScript will inject donation history here -->
+  </div>
 
-
-  <script src="js/main.js"></script>
+  <!-- ✅ Link your JS -->
+  <script src="js/history.js"></script>
 </body>
 </html>
